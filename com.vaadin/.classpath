@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry exported="true" kind="lib" path="validation-api-1.0.0.GA.jar" sourcepath="validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry exported="true" kind="lib" path="vaadin-6.8.2.jar"/>
+	<classpathentry exported="true" kind="lib" path="gwt-dev-2.3.0.jar"/>
+	<classpathentry exported="true" kind="lib" path="gwt-user-2.3.0.jar"/>
+	<classpathentry kind="lib" path="validation-api-1.0.0.GA-sources.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

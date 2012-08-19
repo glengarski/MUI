@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="ASCII"?>
+<samplescreen:Screen xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:samplescreen="ch.vorburger.vaadin.designer.samplescreen" title="Hello World - I am the first Screen">
+  <fields name="name" label="Name" x="117" y="76"/>
+  <fields name="passion" label="Passion" x="379" y="126"/>
+</samplescreen:Screen>

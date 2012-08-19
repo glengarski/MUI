@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.jdt.launching.localJavaApplication">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/com.vaadin/vaadin-6.8.2.jar"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="1"/>
+</listAttribute>
+<stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="com.vaadin.tools.WidgetsetCompiler"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="-out WebContent/VAADIN/widgetsets -localWorkers 2 -logLevel INFO ch.vorburger.vaadin.designer.VaadinDesignerWidgetset"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="ch.vorburger.vaadin.designer"/>
+<stringAttribute key="org.eclipse.jdt.launching.VM_ARGUMENTS" value="-Djava.awt.headless=true -Xss8M -Xmx512M -XX:MaxPermSize=512M"/>
+</launchConfiguration>

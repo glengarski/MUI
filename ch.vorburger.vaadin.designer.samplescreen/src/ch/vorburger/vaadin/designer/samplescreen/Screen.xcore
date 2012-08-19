@@ -1,0 +1,16 @@
+package ch.vorburger.vaadin.designer.samplescreen
+
+class Screen 
+{
+	String title
+	contains Field[] fields
+}
+
+class Field {
+	id String name
+	String label
+	int x
+	int y
+	
+	// TODO Multi-lingual label/toolTip etc. - via Map à la http://www.eclipse.org/forums/index.php/t/351129/ & http://wiki.eclipse.org/EMF/FAQ#How_do_I_create_a_Map_in_EMF.3F ? 
+}
