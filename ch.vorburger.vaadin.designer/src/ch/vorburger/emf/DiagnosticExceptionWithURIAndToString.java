@@ -35,6 +35,7 @@ import org.eclipse.emf.common.util.URI;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class DiagnosticExceptionWithURIAndToString extends DiagnosticException {
 
     private final URI uri;

@@ -24,33 +24,43 @@
 
 package ch.vorburger.vaadin.beans.dragdroplayouts;
 
+import static com.vaadin.terminal.Sizeable.UNITS_PIXELS;
+import static com.vaadin.terminal.Sizeable.UNIT_SYMBOLS;
+
 import java.io.Serializable;
+
+import com.vaadin.terminal.Sizeable;
+import com.vaadin.ui.AbsoluteLayout.ComponentPosition;
 
 import ch.vorburger.beans.AbstractPropertyChangeNotifier;
 
+@SuppressWarnings("serial")
 public class AbsoluteNotifyingComponentPosition extends AbstractPropertyChangeNotifier implements Serializable {
 	public static final String LEFT_VALUE_PROPERTY_NAME = "left";
 	public static final String TOP_VALUE_PROPERTY_NAME = "top";
 	
-	// TODO Support other units than pixels as well
-	
 	private Integer left;
 	private Integer top;
 	
-//	public AbsoluteNotifyingComponentPosition(int leftValueInPixels, int topValueInPixels) {
-//		left = leftValueInPixels;
-//		top = topValueInPixels;
-//	}
-//	
-	public AbsoluteNotifyingComponentPosition() {
-	}
+	private ComponentPosition layoutPosition;
 
+	// Intentionally package local
+	void setLayoutComponentPosition(ComponentPosition newLayoutPosition) {
+		if (this.layoutPosition != null)
+			throw new IllegalStateException(getClass().getName() + " is already attached to a previous ComponentPosition: " + this.layoutPosition);
+		layoutPosition = newLayoutPosition;
+	}
+	
 	public void setLeft(Integer leftValueInPixels) {
 		firePropertyChange(LEFT_VALUE_PROPERTY_NAME, this.left, this.left = leftValueInPixels);
+		if (layoutPosition != null)
+			layoutPosition.setLeft((float) leftValueInPixels, Sizeable.UNITS_PIXELS);
 	}
 
 	public void setTop(Integer topValueInPixels) {
 		firePropertyChange(TOP_VALUE_PROPERTY_NAME, this.top, this.top = topValueInPixels);
+		if (layoutPosition != null)
+			layoutPosition.setTop((float) topValueInPixels, Sizeable.UNITS_PIXELS);
 	}
 	
 	public Integer getLeft() {
@@ -62,6 +72,7 @@ public class AbsoluteNotifyingComponentPosition extends AbstractPropertyChangeNo
 	}
 
 	public String getCSSString() {
-		return "top:" + top + DDAbsoluteLayoutWithBeanPositionChange.UNITS_PIXELS + ";left:" + left + DDAbsoluteLayoutWithBeanPositionChange.UNITS_PIXELS + ";";
+		return "top:" + top + UNIT_SYMBOLS[UNITS_PIXELS] + ";left:" + left + UNIT_SYMBOLS[UNITS_PIXELS] + ";";
 	}
+
 }

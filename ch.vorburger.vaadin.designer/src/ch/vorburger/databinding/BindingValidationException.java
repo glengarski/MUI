@@ -32,6 +32,7 @@ import org.eclipse.core.runtime.IStatus;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class BindingValidationException extends CoreException {
 
 	public BindingValidationException(IStatus status) {

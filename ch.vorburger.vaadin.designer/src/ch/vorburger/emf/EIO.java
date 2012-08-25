@@ -46,6 +46,8 @@ import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
  */
 public class EIO {
 
+	// TODO Will probably end-up being needed only for tests, so move out into tests fragment, later 
+	
     protected ResourceSet resourceSet = new ResourceSetImpl(); // TODO later must be injected, not re-created, so that existing cache is used
     
     public Resource loadResource(URI uri) throws IOException, DiagnosticException {

@@ -1,9 +1,4 @@
 bin/
-build
-*.class
-target
-
-# Package Files #
-*.jar
-*.war
-*.ear
+build/
+target/
+workspace/

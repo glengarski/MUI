@@ -34,6 +34,7 @@ import com.vaadin.event.dd.acceptcriteria.AcceptCriterion;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class DelegatingDropHandler implements DropHandler {
 
 	protected DropHandler delegateDropHandler;

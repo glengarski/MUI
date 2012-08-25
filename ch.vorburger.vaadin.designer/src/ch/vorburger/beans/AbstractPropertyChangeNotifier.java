@@ -38,6 +38,7 @@ import java.beans.PropertyChangeSupport;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public abstract class AbstractPropertyChangeNotifier implements PropertyChangeNotifier {
 
 	private final PropertyChangeSupport changeSupport = new PropertyChangeSupport(this);

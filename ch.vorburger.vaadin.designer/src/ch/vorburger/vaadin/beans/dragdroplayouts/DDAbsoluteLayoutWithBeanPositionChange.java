@@ -34,6 +34,7 @@ import fi.jasoft.dragdroplayouts.DDAbsoluteLayout;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class DDAbsoluteLayoutWithBeanPositionChange extends DDAbsoluteLayout {
 
 	protected final NotifyingDropHandler notifyingDropHandler = new NotifyingDropHandler();
@@ -55,6 +56,8 @@ public class DDAbsoluteLayoutWithBeanPositionChange extends DDAbsoluteLayout {
      */
     public void addComponent(Component c, AbsoluteNotifyingComponentPosition position) {
 		super.addComponent(c, position.getCSSString());
+		ComponentPosition layoutPosition = this.getPosition(c);
+		position.setLayoutComponentPosition(layoutPosition);
 		notifyingDropHandler.componentToPosition.put(c, position);
     }
     

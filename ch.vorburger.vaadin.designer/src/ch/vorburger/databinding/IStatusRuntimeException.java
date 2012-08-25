@@ -33,6 +33,7 @@ import org.eclipse.core.runtime.IStatus;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class IStatusRuntimeException extends RuntimeException {
 
 	private final IStatus status;

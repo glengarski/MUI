@@ -44,6 +44,7 @@ import fi.jasoft.dragdroplayouts.events.LayoutBoundTransferable;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class NotifyingDropHandler extends DelegatingDropHandler {
 
 	final static Logger logger = LoggerFactory.getLogger(NotifyingDropHandler.class);

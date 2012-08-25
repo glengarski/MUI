@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Tests for ch.vorburger.vaadin.designer.tests
+Bundle-SymbolicName: ch.vorburger.vaadin.designer.tests.tests
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: vorburger.ch
+Fragment-Host: ch.vorburger.vaadin.designer
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Require-Bundle: org.junit;bundle-version="4.10.0",
+ ch.vorburger.webdriver;bundle-version="2.25.0",
+ ch.qos.logback.classic;bundle-version="1.0.0",
+ ch.qos.logback.core;bundle-version="1.0.0"

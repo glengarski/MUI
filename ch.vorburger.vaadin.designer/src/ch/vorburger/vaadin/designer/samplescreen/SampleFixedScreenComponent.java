@@ -37,6 +37,7 @@ import com.vaadin.ui.VerticalLayout;
 import fi.jasoft.dragdroplayouts.client.ui.LayoutDragMode;
 import fi.jasoft.dragdroplayouts.drophandlers.DefaultAbsoluteLayoutDropHandler;
 
+@SuppressWarnings("serial")
 public class SampleFixedScreenComponent extends CustomComponent {
 
 	// TODO This class shouldn't be here, must inverse the dependency - ch.vorburger.vaadin.designer.samplescreen should depend on ch.vorburger.vaadin.designer (requires web.xml clean-up...)

@@ -62,6 +62,7 @@ import fi.jasoft.dragdroplayouts.DDAbsoluteLayout;
  * 
  * @author Michael Vorburger
  */
+@SuppressWarnings("serial")
 public class DDAbsoluteLayoutWithBeanPositionChangeImpossibleImplementation extends DDAbsoluteLayout {
 
 	// TODO either remove or finish this initial idea... but I don't actually need it, now using DDAbsoluteLayoutWithBeanPositionChangeImpossibleImplementation instead
@@ -87,7 +88,7 @@ public class DDAbsoluteLayoutWithBeanPositionChangeImpossibleImplementation exte
         }
     }
     
-    public class ComponentPositionWithPropertyChangeNotifier extends ComponentPosition implements PropertyChangeNotifier {
+	public class ComponentPositionWithPropertyChangeNotifier extends ComponentPosition implements PropertyChangeNotifier {
     	private final PropertyChangeSupport changeSupport = new PropertyChangeSupport(this);
     	
     	public static final String LEFT_VALUE_PROPERTY_NAME = "leftValue";
